@@ -1,0 +1,13 @@
+[package]
+name = "lyoink"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "1.1.9"
+aws-sdk-lambda = "1.19.0"
+clap = { version = "4.5.4", features = ["derive"] }
+reqwest = { version = "0.12.3", features = ["blocking", "native-tls-vendored"] }
+tokio = { version = "1.37.0", features = ["full"] }
